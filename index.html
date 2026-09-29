@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2b3430">
+  <meta name="description" content="An elegant, responsive wedding invitation for Isla and Julian.">
+  <title>Isla & Julian · Our Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%234b2033'/><text x='32' y='43' text-anchor='middle' font-size='31' fill='%23f7efe5'>IJ</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-badge">Live demo · PlannedByAye</div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <a class="monogram" href="#home" data-bind="initials">I · J</a>
+    <button class="menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav aria-label="Main navigation"><a href="#story">Our story</a><a href="#day">The day</a><a href="#details">Details</a><a href="#rsvp">RSVP</a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-shade"></div>
+      <div class="light-orb orb-a" aria-hidden="true"></div><div class="light-orb orb-b" aria-hidden="true"></div>
+      <div class="floating-petals" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow hero-step step-1" data-bind="eyebrow">Together with their families</p>
+        <h1><span data-first>Isla</span><em>&</em><span data-second>Julian</span></h1>
+        <div class="fine-rule hero-step step-3"><span></span>invite you to celebrate<span></span></div>
+        <p class="date hero-step step-4" data-bind="dateDisplay">Saturday · 18 September 2027</p>
+        <p class="place hero-step step-4"><span data-bind="venue">The Glasshouse at Alderwood</span><br><small data-bind="location">The Lake District · England</small></p>
+        <a class="button light hero-step step-5" href="#rsvp"><i></i>Kindly respond</a>
+      </div>
+      <a class="scroll-cue" href="#welcome"><span>Discover our day</span><b>↓</b></a>
+    </section>
+
+    <section class="welcome section" id="welcome">
+      <div class="botanical orb-one" aria-hidden="true"></div>
+      <p class="script reveal">A celebration of love</p>
+      <h2 class="reveal">Some moments feel<br><i>like they were written in the stars.</i></h2>
+      <p class="lede reveal">With joyful hearts, we invite you to join us for an evening of candlelight, music, laughter, and the people we love most.</p>
+      <div class="countdown reveal" aria-label="Countdown to the wedding">
+        <div><strong data-count="days">000</strong><span>Days</span></div><div><strong data-count="hours">00</strong><span>Hours</span></div><div><strong data-count="minutes">00</strong><span>Minutes</span></div><div><strong data-count="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-image reveal"><img src="invitation-flatlay.png" alt="Burgundy rose, rings and velvet ribbon arranged beside handmade paper" loading="lazy"></div>
+      <div class="story-copy">
+        <p class="kicker reveal">How we arrived here</p><h2 class="reveal">Our little <i>love story</i></h2>
+        <div id="story-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="quote-image" aria-hidden="true"></div>
+      <blockquote class="reveal">“In all the world, there is no heart for me like yours.”<cite>— Maya Angelou</cite></blockquote>
+    </section>
+
+    <section class="day section" id="day">
+      <p class="script reveal">The day unfolds</p><h2 class="reveal">A gentle rhythm of<br><i>joy & celebration</i></h2>
+      <div class="schedule">
+        <article class="reveal"><b>01</b><time>3:30 PM</time><h3>The Ceremony</h3><p>Take your seat beneath the glasshouse vines as we exchange our vows.</p></article>
+        <article class="reveal"><b>02</b><time>4:30 PM</time><h3>Cocktails & Portraits</h3><p>Champagne, garden games, and a little golden-hour magic.</p></article>
+        <article class="reveal"><b>03</b><time>6:00 PM</time><h3>Dinner & Dancing</h3><p>A candlelit feast followed by music beneath the moon.</p></article>
+      </div>
+    </section>
+
+    <section class="details section" id="details">
+      <div class="details-head reveal"><p class="kicker">The particulars</p><h2>Everything you’ll<br><i>need to know</i></h2></div>
+      <div class="detail-grid">
+        <article class="reveal"><span>⌖</span><h3>Venue</h3><p><b data-bind="venue">The Glasshouse at Alderwood</b><br><span data-bind="location">The Lake District · England</span></p><a data-link="mapUrl" href="#">View map ↗</a></article>
+        <article class="reveal"><span>✦</span><h3>Dress</h3><p><b>Garden formal</b><br>Romantic shades, elegant layers, and dancing shoes encouraged.</p></article>
+        <article class="reveal"><span>⌂</span><h3>Stay</h3><p><b>Alderwood House</b><br>A small room block is held for our guests until 30 June.</p></article>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="rsvp-card reveal">
+        <p class="script">Will you join us?</p><h2>We hope you’ll say <i>yes.</i></h2>
+        <p data-bind="rsvpBy">Please reply by 01 August 2027</p>
+        <a class="button dark" data-link="rsvpUrl" href="#">RSVP now</a>
+        <small>We cannot wait to celebrate with you.</small>
+      </div>
+    </section>
+  </main>
+  <footer><span data-bind="initials">I · J</span><p><span data-bind="dateDisplay">18 September 2027</span> · <span data-bind="location">The Lake District</span></p><a href="#home">Back to top ↑</a></footer>
+  <script src="wedding-details.js"></script><script src="script.js"></script>
+</body>
+</html>
